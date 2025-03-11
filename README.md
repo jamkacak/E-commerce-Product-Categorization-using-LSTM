@@ -55,7 +55,7 @@ The dataset consists of text descriptions of products, which will be used to tra
 
 Below is the architecture of the LSTM model used in this project.
 
-![Model Architecture](images/model summary.png)
+![LSTM Architechture](images/modelsummary.png)
 
 ## Results
 
