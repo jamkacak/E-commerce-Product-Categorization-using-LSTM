@@ -47,7 +47,7 @@ The dataset consists of text descriptions of products, which will be used to tra
 ### Folder Structure
 - **saved_models/**: Folder containing the model in **.keras** format and tokenizer in **.pkl** format.
 - **images/**: Folder containing all images (e.g., model architecture, performance metrics, TensorBoard graphs).
-- **data/**: Folder containing the dataset.
+- **datasets/**: Folder containing the dataset.
 
 - **Dataset Source**: [E-commerce Text Classification Dataset on Kaggle](https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification/data)
 
@@ -67,4 +67,12 @@ Here is a graph between the accuracy training vs validation score:
 
 Here is a graph between the loss training vs validation score:
 
-![MLflow Results](images/trainvsvalloss.png)
+![loss](images/trainvsvalloss.png)
+
+Here is the model f1 score:
+
+![f1score](images/f1scores.png)
+
+Here is the model accuracy score:
+
+![accuracy](images/accuracy.png)
