@@ -18,7 +18,7 @@ The model will be trained using the dataset obtained from Kaggle and evaluated b
 
 The dataset used in this project can be obtained from Kaggle:
 
-- **Dataset URL**: [E-commerce Text Classification Dataset](https://www.kaggle.com/datasets/saurabhshahane/ecommerce-textclassification)
+- **Dataset URL**: [E-commerce Text Classification Dataset](https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification/data)
 
 The dataset consists of text descriptions of products, which will be used to train the LSTM model for categorization.
 
@@ -38,41 +38,33 @@ The dataset consists of text descriptions of products, which will be used to tra
 - Visualize the training process using **TensorBoard**.
 
 ### 5. Model & Tokenizer Saving
-- Save the trained model in **.h5** format in a folder named **saved_models**.
-- Save the tokenizer in **.json** format in the **saved_models** folder.
+- Save the trained model in **.keras** format in a folder named **saved_models**.
+- Save the tokenizer in **.pkl** format in the **saved_models** folder.
 
 ### 6. Performance Evaluation
 - The model’s performance should be evaluated using accuracy and F1 score metrics.
 
-## Deliverables
-
-The following files should be uploaded to both GitHub and LMS:
-
-1. **Training Script**: A Python script containing the code to train the model.
-2. **Saved Model**: The trained model in **.h5** format and any scaler files (if used) in **.pkl** format.
-3. **TensorBoard Visualization**: A screenshot of the training process visualized using TensorBoard.
-4. **Model Architecture Screenshot**: A screenshot of the model’s architecture in **.png** format.
-5. **Performance Evaluation**: A screenshot showing the model's performance metrics (accuracy, F1 score, etc.).
-6. **GitHub URL**: A text file containing the URL of the GitHub repository with the completed project.
-7. **Data Citation**: Credit the source of the dataset in the GitHub repository.
-
 ### Folder Structure
-- **saved_models/**: Folder containing the model in **.h5** format and tokenizer in **.json** format.
-- **scripts/**: Folder containing the Python training script.
+- **saved_models/**: Folder containing the model in **.keras** format and tokenizer in **.pkl** format.
 - **images/**: Folder containing all images (e.g., model architecture, performance metrics, TensorBoard graphs).
 - **data/**: Folder containing the dataset.
 
-## Instructions
+- **Dataset Source**: [E-commerce Text Classification Dataset on Kaggle](https://www.kaggle.com/datasets/saurabhshahane/ecommerce-text-classification/data)
 
-1. Download the dataset from Kaggle.
-2. Preprocess the data using **Pandas** to prepare it for training.
-3. Build an LSTM-based model using **TensorFlow**.
-4. Train the model and monitor the training process using **TensorBoard**.
-5. Save the trained model in the specified format and structure.
-6. Submit the project by zipping all the required files and uploading them to GitHub and LMS by the specified deadline.
+## Model Architecture
 
-## Credits
+Below is the architecture of the LSTM model used in this project.
 
-- **Dataset Source**: [E-commerce Text Classification Dataset on Kaggle](https://www.kaggle.com/datasets/saurabhshahane/ecommerce-textclassification)
+![Model Architecture](images/model summary.png)
 
-Good luck with the project!
+## Results
+
+### Tensorboard Screenshot
+
+Here is a graph between the accuracy training vs validation score:
+
+![Prediction vs Actual](images/accuracy.png)
+
+Here is a graph between the loss training vs validation score:
+
+![MLflow Results](images/trainvsvalloss.png)
